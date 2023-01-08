@@ -7,17 +7,21 @@
     <title class="title">
         Haji's friesur &#9986
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/styles.css">
     </head>
 <body>
      
       <header class="header">
-      <div class="container">
+      <div class="container header-flex">
         <nav class="navigation">
-          <a class="logo" href="/Index.html"><img src="/img/logo.svg" alt="logo"></a>
-  
+         <a class="logo" href="/Index.html">
+          <svg class="header-logo">
+            <use href="./img/icons.svg#icon-logo-2"></use>
+          </svg>
+         </a>
+      
          <ul class="header-list">
           <li class="header-item"><a class="header-link" href="">About</a> </li>
           <li class="header-item"><a class="header-link" href="">Services and prices</a> </li>
@@ -25,11 +29,13 @@
           <li class="header-item"> <a class="header-link" href="">Contacts</a>  </li>
          </ul>
        </nav>
-       </div>  
-         <a class="header-tel" href="tel:054325956976">054325956976 </a>
-       <button  type="button" class="header-btn btn">Online-booking</button>
+       
+        <ul class="header-contacts">
+          <li><a class="header-tel" href="tel:054325956976">054325956976 </a></li>
+          <li><button  type="button" class="header-btn btn">Online-booking</button></li>
+        </ul>
      
-      
+      </div>  
       </header>
 
    <main>
@@ -40,19 +46,21 @@
         <li class="hero-item"><a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofolow  ">instagram</a></li>
         <li class="hero-item"><a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofolow  ">Youtube</a></li>
         </ul>
+      <div class="hero-wrap">
         <p class="hero-pre-title pre-title">A hair salon for men in Loningen</p>
         <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-pre-title pre-title">We are experts in trendy men`s haircuts.
-           We work quickly, carefully and with style.</p>
-         
-     </div>
+     
+      </div>  
+      </div>
      </section>
      
      <section class="about">
-        <ul class="about-list">
+        <div class="container">
+          <ul class="about-list">
             <li class="about-item"><img src="/img/sec2.jpg" alt="haircut" width="270" height="445"></li>
             <li class="about-item"><img src="/img/sect2.jpg" alt="haircut" width="270" height="445"></li>
         </ul>
+      <div class="about-wrap">
         <p class="about-pre-title pre-title">About</p>
         <h2 class="about-title">Best Barbershop in your city</h2>
         <p class="about-after-title">If you want to add more confidence to your image, you should definitely visit us.</p>
@@ -61,13 +69,18 @@
              We are a team that is always "on the same wave" with clients. 
              Therefore, we are always ready to improve everyone who comes to us!</p>
         <button  type="button" class="about-btn btn">Online-booking</button>
+       
+      </div> 
+      </div>
      </section>
   
       <section  class="prices">
-        <p  class="prices-pre-title pre-title">Spend your time with the best masters</p>
+        <div class="container">
+          <p  class="prices-pre-title pre-title">Spend your time with the best masters</p>
         <h2 class="prices-title">Services and prices</h2>
 
-        <ul class="prices-list list">
+        <div class="prices-wrap">
+          <ul class="prices-list list">
             <li class="prices-item">
                 <p class="prices-text ">Men`s haircut</p>
               <p class="prices-text ">15 euro</p>
@@ -107,10 +120,14 @@
                 <p class="prices-text ">10 euro</p>
             </li>
         </ul>
+        </div>
         <button type="button" class="prices-btn btn">Online-booking</button>
+        </div>
       </section>
+
       <section class="benefits">
-        <ul  class="benefits-list">
+        <div class="container">
+          <ul  class="benefits-list">
             <li class="benefits-item">
                <span class="count">600</span>
                <p class="benefits-text">Satisfied customers per day</p>
@@ -133,71 +150,167 @@
             <h3 class="benefits-title">Why people come to us?</h3>
             <p class="benefits-after-title">Only good things are said about us. 
                But it's better to see and feel 1 time than read 10 times. </p>
+        </div>
           
       </section>
 
       <section class="barbers">
-                <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
+                <div class="container">
+                  <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
                 <h2 class="barbers-title title">Our barbers</h2>
                 <ul class="babres-list">
                     <li class="barbers-item">
                         <img src="/img/barber1.jpg" alt="barber1" width="370" height="346">
                         <h3 class="barbers-item-title">John Smith</h3>
                         <p class="barbers-item-text">Extreme Barber</p>
+                        <ul class="barbers-soc-list list">
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-instagram">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-facebook">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-twitter">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-linked">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                        </ul>
                     </li>
                     <li class="barbers-item">
                         <img src="/img/barber2.jpg" alt="barber2" width="370" height="346">
                         <h3 class="barbers-item-title">Michele Doe</h3>
                         <p class="barbers-item-text">Extreme Barber</p>
+                        <ul class="barbers-soc-list list">
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-instagram">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-facebook">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-twitter">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-linked">
+
+                              </use>
+                            </svg>
+                          </a></li>
+                        </ul>
                     </li>
                     <li class="barbers-item">
                          <img src="/img/barber3.jpg" alt="barber3 " width="370" height="346">
                         <h3 class="barbers-item-title">Alan Black</h3>
                         <p class="barbers-item-text">Extreme Barber</p>
+                        <ul class="barbers-soc-list list">
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-instagram" >
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-facebook" >
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-twitter" >
+
+                              </use>
+                            </svg>
+                          </a></li>
+                          <li class="barber-soc-item"><a href="" class="barber-soc-link link">
+                            <svg class="barber-soc-icon">
+                              <use href="./img/icons.svg#icon-linked" >
+
+                              </use>
+                            </svg>
+                          </a></li>
+                        </ul>
                     </li>
                 </ul>
+                </div>
             </section>  
+
+
             <section class="gallery"> 
-                 <h2 class="visually-hidden">Gallery</h2>
-                 <p class="gallery-pre-title pre-title">In Latin, "barba" means "beard"</p>
-                <ul class="gallery-list">
-                    <li class="gallery-item "><img src="/img/barber4.jpg" alt="img1" width="270" height="360"></li>
-                    <li class="gallery-item "><img src="/img/barber5.jpg" alt="img2" width="270" height="360"></li>
-                    <li class="gallery-item "><img src="/img/barber6.jpg" alt="img3" width="270" height="360"></li>
-                    <li class="gallery-item "><img src="/img/barber7.jpg" alt="img4" width="270" height="360"></li>
-                </ul>
-            
+                <div class="container">
+                  <h2 class="visually-hidden">Gallery</h2>
+                  <p class="gallery-pre-title pre-title">In Latin, "barba" means "beard"</p>
+                 <ul class="gallery-list">
+                     <li class="gallery-item "><img src="/img/barber4.jpg" alt="img1" width="270" height="360"></li>
+                     <li class="gallery-item "><img src="/img/barber5.jpg" alt="img2" width="270" height="360"></li>
+                     <li class="gallery-item "><img src="/img/barber6.jpg" alt="img3" width="270" height="360"></li>
+                     <li class="gallery-item "><img src="/img/barber7.jpg" alt="img4" width="270" height="360"></li>
+                     </ul>
+                </div>
             </section>
 
             <section class="contacts">
-             <h2 class="contacts-title title">Contacts</h2>
-            <address class="contacts-adress">
-             <ul class="contacts-list">
-                <li class="contacts-item"><a href="https://goo.gl/maps/hz39WTyFZxyaLSxXA" class="contacts-link">Kurt-Schmücker-Platz 2, <br> Löningen 49624 </a></li>
-                <li class="contacts-item"><a href="tel:054325956976" class="contacts-link">054325956976</a></li>
-                <li class="contacts-item"><a href="mailto:hajisfreisor@mail.com" class="contacts-link e-mail">mailto:hajisfreisor@mail.com</a></li>
-             </ul>
-            </address>
-            <p class="contacts-pre-title pre-title">Working hours</p>
-            
-            
-            
-            <!-- ???????? -->
+             <div class="container">
+              <h1 class="contacts-title">Online-booking</h1>
+              <h2 class="contacts-title-after visually-hidden">Contacts</h2>
+              <address class="contacts-adress">
+               <ul class="contacts-list">
+                  <li class="contacts-item"><a href="https://goo.gl/maps/hz39WTyFZxyaLSxXA" class="contacts-link">Kurt-Schmücker-Platz 2, <br> Löningen 49624 </a></li>
+                  <li class="contacts-item"><a href="tel:054325956976" class="contacts-link">054325956976</a></li>
+                  <li class="contacts-item"><a href="mailto:hajisfreisor@mail.com" class="contacts-link e-mail">hajisfreisor@mail.com</a></li>
+               </ul>
+              </address>
+              <p class="contacts-pre-title pre-title">Working hours</p>
+               <p class="contacts-text"> Montag-Freitag 9:00-18:00  Samstag  9:00-18:00
+              </p>
 
-
-            <p> Montag-Freitag 9:00-18:00 <br> Samstag  9:00-18:00
-            </p>
+          </div>
             </section>
 
         </main>
         <footer class="footer">
-            <p class="footer-pre-title pre-title">
-               &copy; Copyright 2020
-            </p>
-             <ul class="footer-list">
-                <li class="footer-item"><a class="footer-link" href="" target="_blank" rel="noopener noreferrer nofolow  ">instagram</a></li>
-                <li class="footer-item"><a class="footer-link" href="" target="_blank" rel="noopener noreferrer nofolow  ">Youtube</a></li>
-                </ul>
+            <div class="container footer-flex">
+              <p class="footer-pre-title pre-title">
+                &copy; Copyright 2020
+             </p>
+              <ul class="footer-list">
+                 <li class="footer-item"><a class="footer-link" href="" target="_blank" rel="noopener noreferrer nofolow  ">instagram</a></li>
+                 <li class="footer-item"><a class="footer-link" href="" target="_blank" rel="noopener noreferrer nofolow  ">Youtube</a></li>
+                 </ul>
+            </div>
         </footer>
 </body>
 </html>
